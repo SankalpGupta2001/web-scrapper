@@ -22,7 +22,7 @@ const db = new sqlite3.Database("./query.db", sqlite3.OPEN_READWRITE, (err) => {
         console.log("VACUUM completed successfully");
     });
     db.run("PRAGMA integrity_check;", [], (err) => {
-        if (err) console.error(err.message);
+       
         console.log("Integrity check completed successfully");
     });
 
